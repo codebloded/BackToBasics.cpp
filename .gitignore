@@ -16,3 +16,5 @@ struct_union-enum.exe
 classObj.exe
 nestingMF.exe
 class2.exe
+friendFunc.exe
+ststicDF.exe
