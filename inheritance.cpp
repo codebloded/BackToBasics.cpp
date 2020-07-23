@@ -38,6 +38,52 @@ class Employee
  };
 
 
+// **********************ANOTHER EXAMPLE FOR INHERITANCE ***********************
+
+//BASE CLASS
+class Vechile{
+    private:
+        int heatRate=788;
+    public:
+        int milage;
+        string model ;
+        Vechile(int mil , string mod)
+        {
+            milage = mil;
+            model = mod;
+        }
+        void getData(void)
+        {
+            cout<<"The milage is: "<<milage<<endl;
+            cout<<"The model is :"<<model<<endl;
+        }
+        Vechile(){} //default constructor
+;};
+
+//DERIVED CLASS
+class Car : public Vechile{
+    public:
+    int xrfSpeed ;
+    
+    Car(int xrf)
+    {
+        xrfSpeed =xrf;
+    } 
+    Car(int mil , string mod)
+    {
+        milage =mil;
+        model  =mod;
+    }
+    void speed(void)
+    {
+        cout<<"The speed of the car is "<<xrfSpeed<<endl;
+    }
+    Car();
+    
+
+};
+
+
 int main()
 {
     Employee rohan(200) , tan(56);
@@ -47,6 +93,13 @@ int main()
     ram.getCoder();
     python.getCoder();
     ram.showData();
+
+    //********OBJECTS OF CLASS VECHILES AND ITS DERIVED CLSSS************
+    Vechile lamborghini(23,"lamborghini vX1");
+    lamborghini.getData();
+    Car alto(343, "alto800");
+    alto.getData();
+    
 
     return 0;
 }
