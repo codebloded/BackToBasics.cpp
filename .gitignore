@@ -27,3 +27,5 @@ singleInheritance.exe
 multipleInherit.exe
 virtualBaseClass.exe
 project1Calc.exe
+derivedClassConst.exe
+moreOnPointers.exe
