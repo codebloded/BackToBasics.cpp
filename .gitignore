@@ -24,3 +24,6 @@ constructorsx.exe
 inheritance.exe
 multilevel.exe 
 singleInheritance.exe
+multipleInherit.exe
+virtualBaseClass.exe
+project1Calc.exe
